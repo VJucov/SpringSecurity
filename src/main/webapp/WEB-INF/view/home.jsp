@@ -47,6 +47,17 @@
 		</p>
 	
 	</security:authorize>
+
+	<security:authorize access="hasRole('DIRECTOR')">
+
+		<!-- Add a link to point to /systems ... this is for the admins -->
+
+		<p>
+			<a href="${pageContext.request.contextPath}/directors">Directors' Conference</a>
+			(Only for Director peeps)
+		</p>
+
+	</security:authorize>
 	
 	<hr>
 	

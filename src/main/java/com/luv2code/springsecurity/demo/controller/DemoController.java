@@ -27,6 +27,12 @@ public class DemoController {
 		
 		return "systems";
 	}
+
+	@GetMapping("/directors")
+	public String showDirectors() {
+
+		return "directors";
+	}
 	
 }
 
